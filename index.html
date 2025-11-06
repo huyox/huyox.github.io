@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="huyox">
+    <meta name="description" content="Huyox`s personal website">
+    <title>huyox - github.io</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">huyox</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://huyox.github.io">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#narwhal">Narwhal</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="https://github.com/huyox">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <h2>Hello, I&apos;m Huy</h2>
+                <h3>--huyox--</h3>
+                <p>I want to make world a
+                    <del style="font-size: small">worse</del>
+                    better place
+                </p>
+                <p>and I hope it can &colon;&rpar;</p>
+            </div>
+        </section>
+
+        <section id="narwhal" class="narwhal">
+            <div class="container">
+                <h2 translate="no">Narwhal</h2>
+                <h3>It is my idea. Not really ready yet.</h3>
+                <div class="tabs">
+                    <button class="tab active" data-tab="tab1">About</button>
+                    <button class="tab" data-tab="tab2">Grammar</button>
+                    <button class="tab" data-tab="tab3">Misc</button>
+                </div>
+                <article id="tab1" class="tab-content active">
+                    <h4>Narwhal – A Programming Language with an LLVM Backend</h4>
+                    <p>Narwhal with pythonic-style and type-safe</p>
+                    <h5>First Example:</h5>
+                    <pre><code class="language-rust language-python">fn main()
+    print("Hello, World!")</code></pre>
+                    <h5>Fibonacci:</h5>
+                    <pre><code class="language-rust language-python">fn fib(n: int) -> int
+    if x <= 1
+        return x
+    else
+        return fib(x-1) + fib(x-2)
+fn main()
+    print(fib(5))</code></pre>
+                </article>
+
+                <article id="tab2" class="tab-content">
+                    Grammar
+                </article>
+
+                <article id="tab3" class="tab-content">
+                    File extension: .nw
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Project</h2>
+                <div class="grid">
+                    <article>
+                        <h3>huyox</h3>
+                        <p>Personal Repository</p>
+                        <br>
+                        <a href="https://github.com/huyox/huyox" class="link">Visit →</a>
+                    </article>
+                    <article>
+                        <h3>narwhal</h3>
+                        <p>Narwhal – A Programming Language with an LLVM Backend</p>
+                        <a href="https://github.com/huyox/narwhal" class="link">View Source →</a>
+                    </article>
+                    <article>
+                        <h3>huyox.github.io</h3>
+                        <p>Repository of this website</p>
+                        <br>
+                        <a href="https://github.com/huyox/huyox.github.io" class="link">View Source →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Huy D Nguyen. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+<script src="script.js" defer></script>
+
+</html>
